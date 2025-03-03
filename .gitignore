@@ -1,0 +1,9 @@
+# .gitignore
+venv/
+__pycache__/
+*.log
+.env
+.playwright/
+node_modules/
+.idea/
+*.pyc
