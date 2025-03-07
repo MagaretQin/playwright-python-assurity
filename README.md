@@ -1,6 +1,6 @@
 # Project Name
 
-A Python project combining **Playwright** for browser automation and **requests** for HTTP API interactions, with integrated logging.
+A Python project combining **Playwright** for UI/API automation.
 
 ---
 
@@ -22,7 +22,7 @@ A Python project combining **Playwright** for browser automation and **requests*
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/MagaretQin/playwright-python-assurity.git
    cd your-repo
    
 2. **Set up a virtual environment (recommended):**:

@@ -38,6 +38,6 @@ def check_promotion_item_des(response, item_name, exp_item_des):
             description = item["Description"]
             logging.info(f"{item_name} description: " + str(description))
             assert exp_item_des in description
-
-        else:
-            raise ValueError(f'No existing item -- {item_name} in the list')
+            break
+    else:
+        raise ValueError(f'No existing item -- {item_name} in the list')
