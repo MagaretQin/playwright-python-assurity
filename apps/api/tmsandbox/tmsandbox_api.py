@@ -1,6 +1,4 @@
 import logging.config
-from http.client import responses
-
 import requests
 from utils.endpoint_builder import build_url_api
 
@@ -28,9 +26,18 @@ def check_can_relist(response):
     assert can_relist_value
 
 def check_promotion_item_des(response, item_name, exp_item_des):
+    """
+            Args:
+                response: JSON response based on request.
+                item_name: str item needs to be checked under Promotions list.
+                exp_item_des: str expected item description.
+            """
     promotions_list = response["Promotions"]
     for item in promotions_list:
         if item["Name"] == item_name:
             description = item["Description"]
             logging.info(f"{item_name} description: " + str(description))
             assert exp_item_des in description
+
+        else:
+            raise ValueError(f'No existing item -- {item_name} in the list')
