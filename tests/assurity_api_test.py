@@ -3,7 +3,7 @@ from apps.api.tmsandbox import tmsandbox_api
 
 
 def test_validate_tmsandbox():
-    response = tmsandbox_api.request_tmsandbox()
+    response = tmsandbox_api.request_tmsandbox(category=6327)
     # AC1 - Name = "Carbon credits"
     tmsandbox_api.check_category_name(response)
     # AC2 - CanRelist = true

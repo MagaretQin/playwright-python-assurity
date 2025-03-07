@@ -3,8 +3,8 @@ import requests
 from utils.endpoint_builder import build_url_api
 
 
-def request_tmsandbox():
-    url = build_url_api(app="tmsandbox", category=6327)
+def request_tmsandbox(category:int):
+    url = build_url_api(app="tmsandbox", category=category)
     response = requests.get(url=url)
 
     if response.status_code == 200:
