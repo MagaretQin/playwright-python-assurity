@@ -15,6 +15,7 @@ A Python project combining **Playwright** for UI/API automation.
 ## Prerequisites
 - Python 3.8+
 - pip (Python package manager)
+- Pycharm IDE (Optional)
 
 ---
 
@@ -39,5 +40,7 @@ A Python project combining **Playwright** for UI/API automation.
 ## Running Playwright Tests
 
 Example test (tests/assurity_api_tests.py):
+
+*By using Pycharm IDE. Test can also being executed by clicking on the green start button next to the test. Others can execute below in terminal:*
    ```bash
    python -m pytest tests/assurity_api_test.py -s  # -s shows print/logging output
